@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html class="light" lang="de">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ukraine-Russland Krieg - Aktuelle Geschichte</title>
+
+  <!-- Shared stylesheet -->
+  <link rel="stylesheet" href="styles.css"/>
+
+  <!-- Tailwind (utility classes used in markup) -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "error-container": "#ffdad6",
+            "error": "#ba1a1a",
+            "surface-container-highest": "#e4e2e4",
+            "on-secondary-fixed": "#0d1c2f",
+            "on-tertiary-fixed-variant": "#93000b",
+            "on-surface": "#1b1b1d",
+            "surface": "#fcf8fa",
+            "on-primary-container": "#7c839b",
+            "outline-variant": "#c6c6cd",
+            "on-secondary": "#ffffff",
+            "inverse-on-surface": "#f3f0f2",
+            "surface-tint": "#565e74",
+            "primary": "#000000",
+            "secondary-fixed-dim": "#b9c7e0",
+            "on-primary-fixed": "#131b2e",
+            "surface-container-low": "#f6f3f5",
+            "surface-container-high": "#eae7e9",
+            "on-primary": "#ffffff",
+            "surface-dim": "#dcd9db",
+            "on-error": "#ffffff",
+            "on-background": "#1b1b1d",
+            "inverse-surface": "#303032",
+            "secondary": "#515f74",
+            "primary-fixed-dim": "#bec6e0",
+            "on-secondary-container": "#57657b",
+            "outline": "#76777d",
+            "surface-container": "#f0edef",
+            "primary-fixed": "#dae2fd",
+            "background": "#fcf8fa",
+            "on-tertiary-fixed": "#410002",
+            "secondary-fixed": "#d5e3fd",
+            "tertiary-fixed": "#ffdad6",
+            "on-error-container": "#93000a",
+            "on-primary-fixed-variant": "#3f465c",
+            "tertiary-fixed-dim": "#ffb4ab",
+            "secondary-container": "#d5e3fd",
+            "tertiary-container": "#410002",
+            "surface-bright": "#fcf8fa",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary-fixed-variant": "#3a485c",
+            "on-tertiary-container": "#ef453c",
+            "primary-container": "#131b2e",
+            "surface-variant": "#e4e2e4",
+            "on-tertiary": "#ffffff",
+            "on-surface-variant": "#45464d",
+            "tertiary": "#000000",
+            "inverse-primary": "#bec6e0"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          spacing: {
+            "gutter": "24px",
+            "sm": "8px",
+            "margin": "32px",
+            "xs": "4px",
+            "md": "16px",
+            "max-width": "1280px",
+            "xxl": "80px",
+            "lg": "24px",
+            "unit": "4px",
+            "xl": "48px"
+          },
+          fontFamily: {
+            "headline-sm": ["Newsreader"],
+            "caption": ["Work Sans"],
+            "body-lg": ["Work Sans"],
+            "headline-md": ["Newsreader"],
+            "display-lg": ["Newsreader"],
+            "body-md": ["Work Sans"],
+            "display-lg-mobile": ["Newsreader"],
+            "label-caps": ["Archivo Narrow"]
+          },
+          fontSize: {
+            "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+            "caption": ["14px", {"lineHeight": "1.4", "fontWeight": "400"}],
+            "body-lg": ["18px", {"lineHeight": "1.7", "fontWeight": "400"}],
+            "headline-md": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+            "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+            "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+            "display-lg-mobile": ["36px", {"lineHeight": "1.2", "fontWeight": "700"}],
+            "label-caps": ["12px", {"lineHeight": "1.0", "letterSpacing": "0.1em", "fontWeight": "600"}]
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col">
+
+  <!-- ── Header ─────────────────────────────────────────────── -->
+  <header class="bg-surface border-b border-outline-variant sticky top-0 z-50">
+    <div class="flex justify-between items-center w-full max-w-[1280px] mx-auto px-gutter py-md">
+
+      <a class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary tracking-tighter" href="index.html">
+        Aktuelle Geschichte
+      </a>
+
+      <nav class="hidden md:flex gap-lg items-center">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="ukrainerussland.html">Ukrain-Russland Krieg</a>
+        <a class="nav-link" href="aktuellegeschichte.html">Aktuelle Geschichte</a>
+        <a class="nav-link" href="#">Archive</a>
+        <a class="nav-link" href="#">Über</a>
+      </nav>
+
+      <div class="flex items-center gap-md">
+        <button class="hidden md:flex items-center justify-center w-10 h-10 rounded-full hover:bg-surface-container transition-colors" aria-label="Search">
+            <span class="material-symbols-outlined text-primary">search</span>
+        </button>
+        <button class="btn-subscribe">Abonnieren</button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ── Main ───────────────────────────────────────────────── -->
+  <main class="flex-grow w-full max-w-[1280px] mx-auto px-gutter py-xl">
+
+    <!-- Breadcrumbs -->
+    <nav aria-label="Breadcrumb" class="mb-lg">
+      <ol class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><span class="material-symbols-outlined" style="font-size:16px">chevron_right</span></li>
+        <li><a href="#">Konfliktzonen</a></li>
+        <li><span class="material-symbols-outlined" style="font-size:16px">chevron_right</span></li>
+        <li><span class="current">Ukraine-Russland Krieg: Zeitlinie</span></li>
+      </ol>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="mb-xl border-b border-outline-variant pb-lg">
+      <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-sm">
+        Ukraine-Russland Krieg: Wöchentliche Chronik
+      </h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+        Eine umfassende historische Dokumentation, die bedeutende Ereignisse, politische Entwicklungen
+        und militärische Veränderungen auf wöchentlicher Basis verfolgt und wichtigen Kontext für
+        aktuelle Geschehnisse liefert.
+      </p>
+    </header>
+
+    <!-- Table -->
+    <div class="data-table-wrap mb-xl">
+      <div class="overflow-x-auto">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th style="width:8rem">Datum</th>
+              <th style="min-width:300px">Information</th>
+              <th style="width:16rem" class="hidden sm:table-cell">Bilder</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <!-- Row 1 -->
+            <tr class="group">
+              <td>
+                <span class="font-headline-sm text-headline-sm text-secondary" style="display:block">Woche 1</span>
+                <span class="font-caption text-caption text-on-surface-variant">Feb 26 – März 3, 2024</span>
+              </td>
+              <td>
+                <h3 class="table-row-title" style="font-size:24px">Intensivierte Drohnenaustausche und diplomatische Verschiebungen</h3>
+                <p class="table-row-body">
+                  In dieser Woche kam es zu einer Eskalation der Langstrecken-Drohnenangriffe beider Seiten auf die Energieinfrastruktur. Diplomatisch verpflichteten sich mehrere europäische Nationen, die Lieferungen von Artilleriemunition nach dem Pariser Gipfel zu erhöhen, was einen Wandel hin zu aggressiveren Unterstützungspositionen markiert.
+                </p>
+                <div class="table-tags">
+                  <span class="tag">Militär</span>
+                  <span class="tag">Diplomatie</span>
+                </div>
+              </td>
+              <td class="hidden sm:table-cell">
+                <div class="table-img-wrap" style="height:128px">
+                  <img
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1aph-IZ--Ug4Ewb1DT9EpTuvyaaf8kcV1p1go7rpblSOe7j07LSFut0cq4hnhkELuZlrtRvLap5tnnxnhV0VfY9e4hxy3RByO3u8PcNgVJnvALh9XQWblbug-syndxuUJgqWonKEtiYD_Isen3j__6GEfCjMmGuNRWGBZD4ONxqJtp4mL7bh7H29EaCzCBQvQGTwTxVnYt0pjtZ8nU0ngYd_jz1ynlP-zCMn-FU2iDtI05afWZ0tyzwkPt-tLe1Gw4R4rGGPCpgdZ"
+                    alt="Military drone over European cityscape"
+                  />
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 2 -->
+            <tr class="group">
+              <td>
+                <span class="font-headline-sm text-headline-sm text-secondary" style="display:block">Woche 2</span>
+                <span class="font-caption text-caption text-on-surface-variant">März 4 – März 10, 2024</span>
+              </td>
+              <td>
+                <h3 class="table-row-title" style="font-size:24px">Konsolidierung der Ostfront</h3>
+                <p class="table-row-body">
+                  Nach den jüngsten strategischen Rückzügen arbeiteten die ukrainischen Streitkräfte daran, neue Verteidigungslinien westlich von Awdijiwka aufzubauen. Russische Truppen setzten ihre Angriffe fort, mussten dabei jedoch hohe Verluste hinnehmen.
+                  Mehr internationale Aufmerksamkeit richtete sich auf durchgesickerte Diskussionen über potenzielle militärische Einsätze, was eine intensive politische Debatte auslöste.
+                </p>
+                <div class="table-tags">
+                  <span class="tag">Frontlinie</span>
+                  <span class="tag">Politik</span>
+                </div>
+              </td>
+              <td class="hidden sm:table-cell">
+                <div class="table-img-wrap" style="height:128px">
+                  <img
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQHyyTxv4L_7LhwqCh_Wck_3Zm9_3x68lrNPeps9hsDa_1NL4hPt_043wzJbLdo2-vtyw5AhE8whhQUdUnumwcim_jKU3eqovHQlXzgJDqjw2xQyhXCBnfDTj-5EgK842BdVKyve0LLki0rsjAVSzZBsnYfPs-unckDoU4Zbi1hXoHM-sLIfX_GLWOldcKYalkJ5baBvC5WJ_GruG-EmmuuQ_26pbigMYou-WcAyfY6yQ9sRTqGyHIIzfFo65xcfEvhmL8NGy8p6hY"
+                    alt="Anti-tank barriers in a desolate field"
+                  />
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 3 -->
+            <tr class="group">
+              <td>
+                <span class="font-headline-sm text-headline-sm text-secondary" style="display:block">Woche 3</span>
+                <span class="font-caption text-caption text-on-surface-variant">März 11 – März 17, 2024</span>
+              </td>
+              <td>
+                <h3 class="table-row-title" style="font-size:24px">Grenzüberschreitende Operationen und maritime Erfolge</h3>
+                <p class="table-row-body">
+                  Pro-ukrainische russische Milizen starteten bedeutende grenzüberschreitende Angriffe in die
+                  Regionen Belgorod und Kursk. Im Schwarzen Meer beanspruchten ukrainische Oberflächendrohnen
+                  einen weiteren erfolgreichen Schlag gegen ein russisches Patrouillenschiff und
+                  schwächten damit die Einsatzfähigkeit der Schwarzmeerflotte.
+                </p>
+                <div class="table-tags">
+                  <span class="tag">Marine</span>
+                  <span class="tag">Strategie</span>
+                </div>
+              </td>
+              <td class="hidden sm:table-cell">
+                <div class="table-img-wrap" style="height:128px">
+                  <img
+                    src="Fotos/Kriegsschiff.jpeg"
+                    alt="Black Sea nighttime naval engagement"
+                  />
+                </div>
+              </td>
+            </tr>
+
+            <!-- Row 4 -->
+            <tr class="group">
+              <td>
+                <span class="font-headline-sm text-headline-sm text-secondary" style="display:block">Woche 4</span>
+                <span class="font-caption text-caption text-on-surface-variant">März 18 – März 24, 2024</span>
+              </td>
+              <td>
+                <h3 class="table-row-title" style="font-size:24px">Massive Infrastrukturangriffe</h3>
+                <p class="table-row-body">
+                  Russland startete den größten koordinierten Raketen- und Drohnenangriff auf die ukrainische
+                  Energieinfrastruktur des Jahres, was zu weitreichenden Stromausfällen führte. Gleichzeitig kündigte die EU an,
+                  Gewinne aus eingefrorenen russischen Vermögenswerten zur Finanzierung von Waffen für die Ukraine zu verwenden, was eine
+                  erhebliche Eskalation der wirtschaftlichen Kriegsführungstaktiken darstellt.
+                </p>
+                <div class="table-tags">
+                  <span class="tag">Infrastruktur</span>
+                  <span class="tag">Wirtschaft</span>
+                </div>
+              </td>
+              <td class="hidden sm:table-cell">
+                <div class="table-img-wrap" style="height:128px">
+                  <img
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4xZgvHFmFpRcmqsdfzldnEYb8YHpwO1CNVnCGdB-ll6GmV0pomr81spLJjDe6sc2RXI60AIkLxZR191f1VzZd3kCFvEzLCVD3CrwqErarMi7Wy1s0gRoA-DgjMZ7o_3iN01VHjh4zhYTZ7jbgtz-XDvlm6tf3p-vdMsxiaJhTxLl2coxLeKJwV8DhPSz5j3cZX_pN74zAS4p1mOp_e4GvPsTDVKbojIPYYxpQjuzm20F1fdTx6Wl41WddOqP-2AOQwzZcsJt7DiEp"
+                    alt="Damaged electrical substation at dawn"
+                  />
+                </div>
+              </td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Update bar -->
+      <div class="table-footer-bar">
+        <p>Letzte Aktualisierung: Heute, 14:30 Uhr MEZ. Die Lage entwickelt sich kontinuierlich weiter.</p>
+        <button class="btn-primary">
+          <span class="material-symbols-outlined" style="font-size:18px">refresh</span>
+          Aktualisieren
+        </button>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="site-footer">
+    <div class="container inner">
+      <span class="footer-brand">Aktuelle Geschichte</span>
+      <span class="footer-copy">© 2026 Aktuelle Geschichte Rayan Hosseini Nasab Seyyed</span>
+      <nav class="footer-links">
+        <a class="footer-link" href="#">Datenschutz-Bestimmungen</a>
+        <a class="footer-link" href="#">Nutzungsbedingungen</a>
+        <a class="footer-link" href="#">Impressum</a>
+        <a class="footer-link" href="#">Kontakt</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
